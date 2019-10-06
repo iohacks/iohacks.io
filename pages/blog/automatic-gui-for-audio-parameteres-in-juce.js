@@ -31,13 +31,18 @@ ${
   />
 }
 
-You can easily implement this by returning \`false\` from the method \`hasEditor\` in the PluginProcessor.
+You can easily implement this by applying the following change your \`AudioProcessor\` class.
 
 ${
   <Code language="cpp">{`
 bool JuceAutoParamsAudioProcessor::hasEditor() const
 {
     return false;
+}
+
+AudioProcessorEditor* JuceAutoParamsAudioProcessor::createEditor()
+{
+    return nullptr;
 }
   `}</Code>
 }

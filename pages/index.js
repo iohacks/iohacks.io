@@ -28,12 +28,11 @@ export default () => (
   <div className='wrapper'>
     <div className='page'>
       <div id='intro'>
-        <h1>Arunoda Susiripala</h1>
+        <h1>iOHacks</h1>
       </div>
       <div id='ct2'>
-        <MainLink href='https://twitter.com/arunoda'>Twitter</MainLink>
         <MainLink href='/blog'>Blog</MainLink>
-        <MainLink href='https://github.com/arunoda'>GitHub</MainLink>
+        <MainLink href='https://github.com/iohacks'>GitHub</MainLink>
       </div>
     </div>
     <style jsx>{`
@@ -59,7 +58,7 @@ export default () => (
       h1 {
         padding: 0;
         margin: 0;
-        font-size: 35px;
+        font-size: 100px;
         font-weight: 400;
         color: #FFF;
         line-height: 1;

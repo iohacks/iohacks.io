@@ -1,5 +1,5 @@
 import dynamic from 'next/dynamic'
-import { docco } from 'react-syntax-highlighter/dist/cjs/styles/hljs'
+import { githubGist as theme } from 'react-syntax-highlighter/dist/cjs/styles/hljs'
 
 // We use dynamic import here to make sure we don't copy this module across pages.
 // eslint-disable-next-line
@@ -18,7 +18,7 @@ export default ({ language, wrap, children }) => (
   <div className='code'>
     <SyntaxHighlighter
       language={language}
-      style={docco}
+      style={theme}
       customStyle={customPreStyle}
     >
       { children.trim() }

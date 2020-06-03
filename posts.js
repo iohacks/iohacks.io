@@ -5,3 +5,5 @@ export default [
     date: 'October 06, 2019'
   },
 ]
+
+
